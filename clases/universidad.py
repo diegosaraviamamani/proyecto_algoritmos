@@ -1,5 +1,5 @@
-from departamento import Departamento
 from librerias.lista import Lista
+from departamento import Departamento
 
 class Universidad:
     # constructor
