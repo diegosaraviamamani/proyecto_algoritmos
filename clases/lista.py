@@ -26,41 +26,13 @@ class Lista:
             self.nodoFinal.siguienteNodo = nuevoNodo
         self.nodoFinal = nuevoNodo
         self.tamanio += 1
-    def obtenerInicio(self):
-        return self.nodoInicial.valor
-    def obtenerFinal(self):
-        return self.nodoFinal.valor
-    def obtenerEn(self, posicion):
-        if posicion < 0 or posicion >= self.tamanio:
-            return None
-        nodoActual = self.nodoInicial
-        for i in range(posicion):
-            nodoActual = nodoActual.siguienteNodo
-        return nodoActual.valor
-    def eliminarInicio(self):
-        if self.estaVacia():
-            return None
-        valor = self.nodoInicial.valor
-        self.nodoInicial = self.nodoInicial.siguienteNodo
-        self.tamanio -= 1
-        if self.estaVacia():
-            self.nodoFinal = None
-        return valor
-    def eliminarFinal(self):
-        if self.estaVacia():
-            return None
-        valor = self.nodoFinal.valor
-        if self.tamanio == 1:
-            self.nodoInicial = None
-            self.nodoFinal = None
-        else:
-            penultimoNodo = self.nodoInicial
-            while penultimoNodo.siguienteNodo != self.nodoFinal:
-                penultimoNodo = penultimoNodo.siguienteNodo
-            self.nodoFinal = penultimoNodo
-            self.nodoFinal.siguienteNodo = None
-        self.tamanio -= 1
-        return valor
+    # def obtenerEn(self, posicion):
+    #     if posicion < 0 or posicion >= self.tamanio:
+    #         return None
+    #     nodoActual = self.nodoInicial
+    #     for i in range(posicion):
+    #         nodoActual = nodoActual.siguienteNodo
+    #     return nodoActual.valor
     def eliminarEn(self, posicion):
         if posicion < 0 or posicion >= self.tamanio:
             return None
@@ -75,16 +47,16 @@ class Lista:
         anteriorNodo.siguienteNodo = anteriorNodo.siguienteNodo.siguienteNodo
         self.tamanio -= 1
         return valor
-    def iterar(self, funcion):
-        nodoActual = self.nodoInicial
-        while nodoActual != None:
-            funcion(nodoActual)
-            nodoActual = nodoActual.siguienteNodo
+    # def iterar(self, funcion):
+    #     nodoActual = self.nodoInicial
+    #     while nodoActual != None:
+    #         funcion(nodoActual)
+    #         nodoActual = nodoActual.siguienteNodo
     #metodo __str__
-    def __str__(self):
-        cadena = ""
-        nodoActual = self.nodoInicial
-        while nodoActual != None:
-            cadena += str(nodoActual.valor) + " "
-            nodoActual = nodoActual.siguienteNodo
-        return cadena
+    # def __str__(self):
+    #     cadena = ""
+    #     nodoActual = self.nodoInicial
+    #     while nodoActual != None:
+    #         cadena += str(nodoActual.valor) + " "
+    #         nodoActual = nodoActual.siguienteNodo
+    #     return cadena
