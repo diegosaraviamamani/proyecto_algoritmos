@@ -1,19 +1,19 @@
-from librerias.lista import Lista
+from lista import Lista
 
 class Departamento:
     # constructor
     def __init__(self, nombre):
         self.nombre = nombre
-        self.trabajadores = Lista()
-        self.estudiantesGrado = Lista()
+        self.trabajadores = Lista() #agregación
+        self.estudiantesGrado = Lista() #agregación
         self.pdis = Lista()
-
-    def print(self):
-        return 'Estudiantes de grado:\n{0}'.format(self.estudiantesGrado)
-    def trabajadoresStr(self):
-        return 'Trabajadores:\n{0}'.format(self.trabajadores)
-    def pdisStr(self):
-        return 'PDIs:\n{0}'.format(self.pdis)
+    
+    def agregarTrabajador(self, trabajador):
+        self.trabajadores.agregar(trabajador)
+    def agregarEstudianteGrado(self, estudiante):
+        self.estudiantesGrado.agregar(estudiante)
+    def agregarPDI(self, pdi):
+        self.pdis.agregar(pdi)
 
     # metodo __str__
     def __str__(self):

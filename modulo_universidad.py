@@ -1,5 +1,5 @@
 import os
-from clases.librerias.lista import Lista
+from clases.lista import Lista
 from clases.universidad import Universidad
 
 universidades = Lista()

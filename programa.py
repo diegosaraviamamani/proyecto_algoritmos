@@ -1,5 +1,5 @@
 import os
-from clases.librerias.lista import Lista
+from clases.lista import Lista
 from modulo_universidad import universidad_main
 
 universidades = Lista()
@@ -15,15 +15,15 @@ SISTEMA EDUCATIVO UNIVERSITARIO
 
 def main():
     while True:
-      opcion = main_menu()
-      os.system('cls') | os.system('clear')
-      if opcion == "1":
-          universidad_main
-      elif opcion == "2":
-          print("Salir")
-          break
-      else:
-          print("Opción inválida")
+        opcion = main_menu()
+        os.system('cls') | os.system('clear')
+        if opcion == "1":
+            universidad_main
+        elif opcion == "2":
+            print("Salir")
+            break
+        else:
+            print("Opción inválida")
 main()
 
 def ingresar_sistema():

@@ -1,5 +1,5 @@
-from librerias.lista import Lista
 from departamento import Departamento
+from lista import Lista
 
 class Universidad:
     # constructor
@@ -11,9 +11,10 @@ class Universidad:
         self.departamentos = Lista() # composicion (Departamento)
 
     def agregarTrabajador(self, trabajador):
-        self.trabajador.agregar(trabajador)
+        self.trabajadores.agregar(trabajador)
     def agregarEstudiante(self, estudiante):
         self.estudiantes.agregar(estudiante)
+        
     def agregarDepartamento(self, nombreDepartamento):
         departamento = Departamento(nombreDepartamento)
         self.departamentos.agregar(departamento)

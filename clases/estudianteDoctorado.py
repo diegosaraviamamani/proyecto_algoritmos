@@ -2,9 +2,9 @@ from estudiante import Estudiante
 
 class EstudianteDoctorado(Estudiante):
     # constructor
-    def __init__(self, nombre, ci, universidad, titulacion):
+    def __init__(self, nombre, ci, universidad, programa):
         super().__init__(nombre, ci, universidad)
-        self.programa = titulacion
+        self.programa = programa
 
     def realizarTesis(self):
         print("Realizar tesis...")
