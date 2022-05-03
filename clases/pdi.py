@@ -1,21 +1,21 @@
 #perosnal docente e investigador
 from trabajador import Trabajador
 
-class PDI(Trabajador):
-    #contructor
-    def __init__(self):
-        super().__init__()
-        self._categoria=input('Ingrese la categoria: ')
+class PDI:
+    # constructor
+    def __init__(self, categoria, nombre, ci, fechaInicio):
+        self.categoria = categoria
+        self.trabajador = Trabajador(nombre, ci, fechaInicio) # composicion (Trabajador)
 
-    #metodos
     def investigar(self):
         print('investigando...')
     def enseniar(self):
         print('enseñando...')
-        
-    #metodo __str__
-    def __str__(self):
-        return super().__str__()+ '\ncategoria: {}'.format(self._categoria)
 
-pdi = PDI()
-print(pdi)
+    # metodo __str__
+    def __str__(self):
+        txt = 'Puesto: {0} - {1}'
+        return txt.format(self.puesto, self.trabajador)
+
+# pdi = PDI('Docente II', 'Juan', '12345678', '01/01/2000')
+# print(pdi) 

@@ -18,13 +18,7 @@ class Lista:
         return self.tamanio
     def estaVacia(self):
         return self.tamanio == 0
-    def agregarInicio(self, valor):
-        nuevoNodo = Nodo(valor, self.nodoInicial)
-        self.nodoInicial = nuevoNodo
-        if self.estaVacia():
-            self.nodoFinal = nuevoNodo
-        self.tamanio += 1
-    def agregarFinal(self, valor):
+    def agregar(self, valor):
         nuevoNodo = Nodo(valor)
         if self.estaVacia():
             self.nodoInicial = nuevoNodo

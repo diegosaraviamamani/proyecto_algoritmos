@@ -1,10 +1,14 @@
+from universidad import Universidad
 from persona import Persona
 
 class Estudiante(Persona):
     #constructor
-    def __init__(self):
-      super().__init__()
+    def __init__(self, nombre, ci, universidad):
+      super().__init__('',ci)
+      self._nombre = nombre
+      self.universidad = universidad # asociacion
 
     #metodo __str__
     def __str__(self):
-      return '\nESTUDIANTE\nNombre: {}\nCI: {}'.format(self._nombre,self._ci)
+      txt = 'Nombre: {}\nCI: {}\n{}'
+      return txt.format(self._nombre, self.ci, self.universidad)

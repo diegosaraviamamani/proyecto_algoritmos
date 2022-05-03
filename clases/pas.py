@@ -1,16 +1,19 @@
 # personal de adminitracion y servicios
 from trabajador import Trabajador
-class PAS(Trabajador):
-    # constructor
-    def __init__(self):
-        super().__init__()
-        self._puesto=input('Ingrese el puesto: ')
-    #metodo adminitrar
-    def administrar(self):
-        print('administrando...')
-    #metodo __str__
-    def __str__(self):
-        return super().__str__() + '\nPuesto: {}'.format(self._puesto)
 
-pas=PAS()
-print(pas)
+class PAS:
+    # constructor
+    def __init__(self, puesto, nombre, ci, fechaInicio):
+        self.puesto = puesto
+        self.trabajador = Trabajador(nombre, ci, fechaInicio) # composicion (Trabajador)
+
+    def administrar(self):
+        print('Administrando...')
+
+    # metodo __str__
+    def __str__(self):
+        txt = 'Puesto: {0} - {1}'
+        return txt.format(self.puesto, self.trabajador)
+
+# pas = PAS('Administrador', 'Juan', '12345678', '01/01/2000')
+# print(pas)
