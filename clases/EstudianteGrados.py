@@ -1,4 +1,4 @@
-from estudiante import Estudiante
+from Estudiante import Estudiante
 
 class EstudianteGrado(Estudiante):
     # constructor

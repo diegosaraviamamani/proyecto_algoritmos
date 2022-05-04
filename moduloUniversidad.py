@@ -1,6 +1,6 @@
 import os
-from clases.lista import Lista
-from clases.universidad import Universidad
+from clases.Listas import Lista
+from clases.Universidads import Universidad
 
 universidades = Lista()
 
@@ -13,24 +13,24 @@ def main_menu():
     """)
     return input("Ingrese una opción: ")
 
-def listar_universidades():
+def listarUniversidades():
     print("Listar universidades")
     for i in range(universidades.tamanio):
         print('[{0}]'.format(i), universidades[i])
-def nueva_universidad():
+def nuevaUniversidad():
     nombre = input("Ingrese el nombre de la universidad: ")
     ciudad = input("Ingrese la ciudad de la universidad: ")
     universidad = Universidad(nombre, ciudad)
     universidades.append(universidad)
 
-def universidad_main():
+def universidadMain():
     while True:
         opcion = main_menu()
         os.system('cls') | os.system('clear')
         if opcion == "1":
-            listar_universidades()
+            listarUniversidades()
         elif opcion == "2":
-            nueva_universidad()
+            nuevaUniversidad()
         elif opcion == "3":
             print("Salir")
             break

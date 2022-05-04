@@ -1,5 +1,5 @@
 #perosnal docente e investigador
-from trabajador import Trabajador
+from Trabajador import Trabajador
 
 class PDI:
     # constructor

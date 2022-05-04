@@ -1,5 +1,5 @@
-from universidad import Universidad
-from persona import Persona
+from Universidad import Universidad
+from Persona import Persona
 
 class Estudiante(Persona):
     #constructor

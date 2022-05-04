@@ -1,5 +1,5 @@
 # personal de adminitracion y servicios
-from trabajador import Trabajador
+from Trabajador import Trabajador
 
 class PAS:
     # constructor

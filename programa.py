@@ -1,6 +1,6 @@
 import os
-from clases.lista import Lista
-from modulo_universidad import universidad_main
+from clases.Listas import Lista
+from moduloUniversidad import universidadMain
 
 universidades = Lista()
 
@@ -18,7 +18,7 @@ def main():
         opcion = main_menu()
         os.system('cls') | os.system('clear')
         if opcion == "1":
-            universidad_main
+            universidadMain()
         elif opcion == "2":
             print("Salir")
             break

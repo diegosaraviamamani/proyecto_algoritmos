@@ -1,4 +1,4 @@
-from lista import Lista
+from Lista import Lista
 
 class Departamento:
     # constructor

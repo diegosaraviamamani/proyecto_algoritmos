@@ -1,4 +1,4 @@
-from persona import Persona
+from Persona import Persona
 
 class Trabajador(Persona):
     def __init__(self, nombre, ci, fechaInicio):

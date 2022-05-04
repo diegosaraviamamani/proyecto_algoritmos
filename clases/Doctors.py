@@ -1,4 +1,4 @@
-from clases.trabajador import Trabajador
+from Trabajador import Trabajador
 
 
 class Doctor(Trabajador):

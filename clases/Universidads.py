@@ -1,5 +1,5 @@
-from departamento import Departamento
-from lista import Lista
+from Lista import Lista
+from Departamento import Departamento
 
 class Universidad:
     # constructor
