@@ -1,5 +1,5 @@
 import os
-from clases.Listas import Lista
+from clases.Lista import Lista
 from moduloUniversidad import universidadMain
 
 universidades = Lista()

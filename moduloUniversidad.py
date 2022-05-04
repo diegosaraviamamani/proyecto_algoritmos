@@ -1,6 +1,6 @@
 import os
-from clases.Listas import Lista
-from clases.Universidads import Universidad
+from clases.Lista import Lista
+from clases.Universidad import Universidad
 
 universidades = Lista()
 
