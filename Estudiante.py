@@ -1,4 +1,3 @@
-from Universidad import Universidad
 from Persona import Persona
 
 class Estudiante(Persona):

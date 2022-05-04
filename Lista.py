@@ -53,10 +53,10 @@ class Lista:
     #         funcion(nodoActual)
     #         nodoActual = nodoActual.siguienteNodo
     #metodo __str__
-    # def __str__(self):
-    #     cadena = ""
-    #     nodoActual = self.nodoInicial
-    #     while nodoActual != None:
-    #         cadena += str(nodoActual.valor) + " "
-    #         nodoActual = nodoActual.siguienteNodo
-    #     return cadena
+    def __str__(self):
+        cadena = ""
+        nodoActual = self.nodoInicial
+        while nodoActual != None:
+            cadena += str(nodoActual.valor) + "\n"
+            nodoActual = nodoActual.siguienteNodo
+        return cadena

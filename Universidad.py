@@ -1,5 +1,5 @@
-from Lista import Lista
 from Departamento import Departamento
+from Lista import Lista
 
 class Universidad:
     # constructor
@@ -23,3 +23,11 @@ class Universidad:
     def __str__(self):
         txt = 'Universidad: {0} - {1} '
         return txt.format(self.nombre, self.ciudad)
+
+uni = Universidad('UCA', 'Bogota')
+uni.agregarDepartamento('Informatica')
+uni.agregarDepartamento('Filosofia')
+
+print(uni)
+
+print(uni.departamentos)

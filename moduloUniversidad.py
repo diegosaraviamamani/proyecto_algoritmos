@@ -1,10 +1,10 @@
 import os
-from clases.Lista import Lista
-from clases.Universidad import Universidad
+from Lista import Lista
+from Universidad import Universidad
 
 universidades = Lista()
 
-def main_menu():
+def mainMenu():
     print("UNIVERSIDADES")
     print("""
     1. Listar universidades
@@ -25,7 +25,7 @@ def nuevaUniversidad():
 
 def universidadMain():
     while True:
-        opcion = main_menu()
+        opcion = mainMenu()
         os.system('cls') | os.system('clear')
         if opcion == "1":
             listarUniversidades()
