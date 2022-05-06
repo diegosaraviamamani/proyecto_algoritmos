@@ -8,8 +8,10 @@ universidades = Lista()
 def main_menu():
     print("""
 SISTEMA EDUCATIVO UNIVERSITARIO
-    1. Ingresar al sistema
-    2. Salir
+    1. Universidades
+    2. Estudiantes
+    3. Trabajadores
+    4. Salir
     """)
     return input("Ingrese una opción: ")
 
@@ -20,6 +22,10 @@ def main():
         if opcion == "1":
             universidadMain()
         elif opcion == "2":
+            print("Estudiantes")
+        elif opcion == "3":
+            print("Trabajadores")
+        elif opcion == "4":
             print("Salir")
             break
         else:

@@ -23,11 +23,3 @@ class Universidad:
     def __str__(self):
         txt = 'Universidad: {0} - {1} '
         return txt.format(self.nombre, self.ciudad)
-
-uni = Universidad('UCA', 'Bogota')
-uni.agregarDepartamento('Informatica')
-uni.agregarDepartamento('Filosofia')
-
-print(uni)
-
-print(uni.departamentos)
