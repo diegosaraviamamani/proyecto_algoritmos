@@ -69,20 +69,27 @@ Podemos:
 
 #### Menu PDI {#pdi}
 
-- Mostrar Datos
-- Método Investigar
-- Método enseñar
-- Salir
+| Opciones              | Descripción                                    |
+| --------------------- | ---------------------------------------------- |
+| Mostrar Datos         | Nos muestra la lista pdi                       |
+| Método Investigar     | Nos muestra el resultado del método investigar |
+| Método enseñar        | Nos muestra el resultado del método enseñar    |
+| [Volver](#modulo-pdi) | Nos envia al modulo pdi                        |
 
 ### Menu Módulo PAS {#modulo-pas}
 
-- Listar PAS
-- Seleccionar PAS
-- Nuevo PAS
-- Volver
+| Opciones                       | Descripción                               |
+| ------------------------------ | ----------------------------------------- |
+| Listar PAS                     | Nos muestra la lista de PAS               |
+| [Seleccionar PAS](#pas)        | Seleccion de las opciones de un PAS       |
+| Nuevo PAS                      | Nos pide valores para crear un nuevo PAS. |
+| [Volver](#modulo-trabajadores) | Nos envia al modulo trabajadores          |
 
 #### Menu PAS {#pas}
 
-- Mostrar Datos
-- Método Administrar
-- Salir
+| Opciones              | Descripción                                    |
+| --------------------- | ---------------------------------------------- |
+| Mostrar Datos         | Nos muestra la lista pas                       |
+| Método Investigar     | Nos muestra el resultado del método investigar |
+| Método enseñar        | Nos muestra el resultado del método enseñar    |
+| [Volver](#modulo-pas) | Nos envia al modulo pas                        |
