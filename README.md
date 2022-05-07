@@ -44,19 +44,19 @@ Podemos:
 
 ### Menu Estudiante {#estudiante}
 
-| Opciones                      | Descripción                                                                              |
-| ----------------------------- | ---------------------------------------------------------------------------------------- |
-| Mostrar Datos Estudiantes     | Mostrar todos los datos del estudinte                                                    |
-| Asignar a una universidad     | Listar todas las universidades con su indesx, y pedir index de la universidad a asignar. |
-| [Volver](#modulo-estudiantes) | Nos envia al modulo estudiante                                                           |
+| Opciones                      | Descripción                                                      |
+| ----------------------------- | ---------------------------------------------------------------- |
+| Mostrar Datos Estudiantes     | Mostrar todos los datos del estudinte                            |
+| Asignar a una universidad     | Listar universidades, y pedir index de la universidad a asignar. |
+| [Volver](#modulo-estudiantes) | Nos envia al modulo estudiante                                   |
 
 ## Menu Modulo Trabajadores {#modulo-trabajadores}
 
-| Opciones                              | Descripción                   |
-| ------------------------------------- | ----------------------------- |
-| [Ingresa a Modulo PDI]([#modulo-pdi]) | Nos envia al modulo PDI       |
-| [Ingresa a Modulo PAS]([#modulo-pas]) | Nos envia al modulo PAS       |
-| [Volver](#principal)                  | Nos envia al modulo principal |
+| Opciones                            | Descripción                   |
+| ----------------------------------- | ----------------------------- |
+| [Ingresa a Modulo PDI](#modulo-pdi) | Nos envia al modulo PDI       |
+| [Ingresa a Modulo PAS](#modulo-pas) | Nos envia al modulo PAS       |
+| [Volver](#principal)                | Nos envia al modulo principal |
 
 ### Menu Modulo PDI {#modulo-pdi}
 
