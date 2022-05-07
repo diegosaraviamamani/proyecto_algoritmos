@@ -2,66 +2,70 @@
 
 ## Menu principal {#principal}
 
-Tenemos la siguientes opciones
-
 | Opciones                               | Descripción                       |
 | -------------------------------------- | --------------------------------- |
-| [Universidades](#modulo-universidades) | Nos envia al Modulo Universidades |
-| [Estudiante](#modulo-estudiantes)      | Nos envia al Modulo Estudiantes   |
-| [Trabajadores](#modulo-trabajadores)   | Nos envia al Modulo Trabajadores  |
+| [Universidades](#modulo-universidades) | Nos envia al Módulo Universidades |
+| [Estudiante](#modulo-estudiantes)      | Nos envia al Módulo Estudiantes   |
+| [Trabajadores](#modulo-trabajadores)   | Nos envia al Módulo Trabajadores  |
 | Salir                                  | Salir del sistema                 |
 
-## Menu Modulo Universidades {#modulo-universidades}
+## Menu Módulo Universidades {#modulo-universidades}
 
 | Opciones                                   | Descripción                                                              |
 | ------------------------------------------ | ------------------------------------------------------------------------ |
 | Listar Universidades                       | Nos muestra la lista de universidades con su respectiva posición (index) |
 | [Ingresar a una universidad](#universidad) | Pide el index de la universidad e ingresa al menu                        |
-| Crear Nueva universidad                    | Nos pide los valores para crear una nueva universidad                    |
+| Crear Nueva universidad                    | Pedir nombre, ciudad y crear nueva unviersidad                           |
 | [Volver](#principal)                       | Nos envia al menu principal                                              |
 
 ### Menu Universidad {#universidad}
 
-- Mostrar Datos
-- Ver los estudiantes
-- Agregar estudiantes
-- Ver Trabajadores
-- Nuevo Trabajador
-- Ver Departamentos
-- Nuevo Departamento
-- Volver
+| Opciones             | Descripción                                                              |
+| -------------------- | ------------------------------------------------------------------------ |
+| Mostrar Datos        | Nos muestra la lista de universidades con su respectiva posición (index) |
+| Listar estudiantes   | Muestra la lista de estudiantes registrados                              |
+| Agregar estudiantes  | Nos pide información para crear nuevo estudiante                         |
+| Listar Trabajadores  | Muestra la lista de trabajadores registrados                             |
+| Nuevo Trabajador     | Nos pide información para crear nuevo trabajador                         |
+| Listar Departamentos | Muestra la lista de departamentos registrados                            |
+| Nuevo Departamentos  | Nos pide información para crear nuevo departamento                       |
+| [Volver](#principal) | Nos envia al menu principal                                              |
 
-## Menu Modulo Estudiantes {#modulo-estudiantes}
+## Menu Módulo Estudiantes {#modulo-estudiantes}
 
 Podemos:
 
-- Listar Estudiantes
-- Seleccionar un Estudiante (CI)
-- Crear Nuevo Estudiante
-- Volver
+| Opciones                                 | Descripción                                         |
+| ---------------------------------------- | --------------------------------------------------- |
+| Listar Estudiantes                       | Nos muestra la lista de estudiantes                 |
+| [Seleccionar un estudiante](#estudiante) | podemos hacer la seleccion de reigistro por la (CI) |
+| Crear nuevo estudiante                   | Nos pide información para crear nuevo estudiante    |
+| [volver](#principal)                     | Nos muestra lista de trabajadores resgistrados      |
 
 ### Menu Estudiante {#estudiante}
 
-Mostraria sus datos y el menu:
-
-- Mostrar datos
-- Asignar a una universidad
-- Volver
+| Opciones                      | Descripción                                                                              |
+| ----------------------------- | ---------------------------------------------------------------------------------------- |
+| Mostrar Datos Estudiantes     | Mostrar todos los datos del estudinte                                                    |
+| Asignar a una universidad     | Listar todas las universidades con su indesx, y pedir index de la universidad a asignar. |
+| [Volver](#modulo-estudiantes) | Nos envia al modulo estudiante                                                           |
 
 ## Menu Modulo Trabajadores {#modulo-trabajadores}
 
-Podemos:
-
-- Personal Docente e Investigador (PDI)
-- Personal Administrativo y de Servicio (PAS)
-- Volver
+| Opciones                              | Descripción                   |
+| ------------------------------------- | ----------------------------- |
+| [Ingresa a Modulo PDI]([#modulo-pdi]) | Nos envia al modulo PDI       |
+| [Ingresa a Modulo PAS]([#modulo-pas]) | Nos envia al modulo PAS       |
+| [Volver](#principal)                  | Nos envia al modulo principal |
 
 ### Menu Modulo PDI {#modulo-pdi}
 
-- Listar PDI
-- Seleccionar PDI
-- Nuevo PDI
-- Volver
+| Opciones                       | Descripción                               |
+| ------------------------------ | ----------------------------------------- |
+| Listar PDI                     | Nos muestra la lista de PDI               |
+| [Seleccionar PDI](#pdi)        | Seleccion de las opciones de un PDI       |
+| Nuevo PDI                      | Nos pide valores para crear un nuevo PDI. |
+| [Volver](#modulo-trabajadores) | Nos envia al modulo estudiante            |
 
 #### Menu PDI {#pdi}
 
@@ -70,7 +74,7 @@ Podemos:
 - Método enseñar
 - Salir
 
-### Menu Modulo PAS {#modulo-pas}
+### Menu Módulo PAS {#modulo-pas}
 
 - Listar PAS
 - Seleccionar PAS
