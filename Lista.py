@@ -35,21 +35,6 @@ class Lista:
             nodoActual = nodoActual.siguienteNodo
         return nodoActual.valor
 
-    def eliminarEn(self, posicion):
-        if posicion < 0 or posicion >= self.tamanio:
-            return None
-        if posicion == 0:
-            return self.eliminarInicio()
-        if posicion == self.tamanio - 1:
-            return self.eliminarFinal()
-        anteriorNodo = self.nodoInicial
-        for i in range(posicion - 1):
-            anteriorNodo = anteriorNodo.siguienteNodo
-        valor = anteriorNodo.siguienteNodo.valor
-        anteriorNodo.siguienteNodo = anteriorNodo.siguienteNodo.siguienteNodo
-        self.tamanio -= 1
-        return valor
-
     def __str__(self):
         cadena = ""
         nodoActual = self.nodoInicial
