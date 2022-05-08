@@ -1,13 +1,14 @@
+# Si posee link creamos otro módulo
+# Si no, solo internamente
 import os
-from Lista import Lista
-from moduloUniversidad import universidadMain
+from moduloUniversidades import main as moduloUniversidades
+from moduloEstudiantes import main as moduloEstudiantes
+from moduloTrabajadores import main as moduloTrabajadores
 
-universidades = Lista()
 
-# Menu Principal
-def main_menu():
+def menu():
     print("""
-SISTEMA EDUCATIVO UNIVERSITARIO
+    SISTEMA EDUCATIVO UNIVERSITARIO
     1. Universidades
     2. Estudiantes
     3. Trabajadores
@@ -17,20 +18,18 @@ SISTEMA EDUCATIVO UNIVERSITARIO
 
 def main():
     while True:
-        opcion = main_menu()
+        opcion = menu()
         os.system('cls') | os.system('clear')
         if opcion == "1":
-            universidadMain()
+            moduloUniversidades()
         elif opcion == "2":
-            print("Estudiantes")
+            moduloEstudiantes()
         elif opcion == "3":
-            print("Trabajadores")
+            moduloTrabajadores()
         elif opcion == "4":
             print("Salir")
             break
         else:
             print("Opción inválida")
-main()
 
-def ingresar_sistema():
-    print("Ingresar al sistema")
+main()

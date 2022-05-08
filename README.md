@@ -5,7 +5,7 @@
 | Opciones                               | Descripción                       |
 | -------------------------------------- | --------------------------------- |
 | [Universidades](#modulo-universidades) | Nos envia al Módulo Universidades |
-| [Estudiante](#modulo-estudiantes)      | Nos envia al Módulo Estudiantes   |
+| [Estudiantes](#modulo-estudiantes)      | Nos envia al Módulo Estudiantes   |
 | [Trabajadores](#modulo-trabajadores)   | Nos envia al Módulo Trabajadores  |
 | Salir                                  | Salir del sistema                 |
 
