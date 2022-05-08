@@ -1,27 +1,29 @@
 import os
 
-
-def main():
+def main(pas):
     def menu():
-        print("""
-        MODULO ESTUDIANTES
-        1. Listar Estudiantes
-        2. Seleccionar un estudiante
-        3. Crear nuevo estudiante
-        4. Volver
-        """)
+        txt = """
+        {0}
+        1. Mostrar Datos
+        2. Metodo Administrar
+        3. Volver
+        """.format(pas.categoria.upper())
+        print(txt)
         return input("Ingrese una opción: ")
 
+#funciones
+    def mostrarDatos():
+        print(pas)
+
+#menu de seleccion
     while True:
         opcion = menu()
         os.system('cls') | os.system('clear')
         if opcion == "1":
-            pass
+            mostrarDatos()
         elif opcion == "2":
-            pass
+            pas.administrar()
         elif opcion == "3":
-            pass
-        elif opcion == "4":
             print("Volver")
             break
         else:

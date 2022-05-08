@@ -91,6 +91,5 @@ Podemos:
 | Opciones              | Descripción                                    |
 | --------------------- | ---------------------------------------------- |
 | Mostrar Datos         | Nos muestra la lista pas                       |
-| Método Investigar     | Nos muestra el resultado del método investigar |
-| Método enseñar        | Nos muestra el resultado del método enseñar    |
+| Método Administrar    | Nos muestra el resultado del método investigar |
 | [Volver](#modulo-pas) | Nos envia al modulo pas                        |
