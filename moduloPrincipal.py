@@ -9,6 +9,7 @@ from moduloTrabajadores import main as moduloTrabajadores
 
 # Principal
 def main():
+    # Menu de opciónes
     def menu():
         print("""
         SISTEMA EDUCATIVO UNIVERSITARIO
