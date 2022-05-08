@@ -27,8 +27,8 @@ def main():
         return listaPAS.obtenerEn(index)
 
     def nuevoPAS():
-        categoria=input('Ingrese Nombre Categoria: ')
-        nuevoPAS=PAS(categoria)
+        puesto=input('Ingrese Nombre Puesto: ')
+        nuevoPAS=PAS(puesto)
         listaPAS.agregar(nuevoPAS)
         print("----------------------------------------------")
         print("PDI CREADO")

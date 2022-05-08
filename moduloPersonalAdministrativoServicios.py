@@ -7,7 +7,7 @@ def main(pas):
         1. Mostrar Datos
         2. Metodo Administrar
         3. Volver
-        """.format(pas.categoria.upper())
+        """.format(pas.puesto.upper())
         print(txt)
         return input("Ingrese una opción: ")
 
