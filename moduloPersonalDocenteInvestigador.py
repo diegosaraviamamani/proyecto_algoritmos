@@ -5,7 +5,7 @@ def main(pdi):
         txt = """
         {0}
         1. Mostrar Datos
-        2. Asisgnar un trabajador
+        2. Asignar un trabajador
         3. Metodo Investigar
         4. Metodo Enseñar
         5. Volver

@@ -72,7 +72,7 @@ Podemos:
 | Opciones              | Descripción                                    |
 | --------------------- | ---------------------------------------------- |
 | Mostrar Datos         | Nos muestra la lista pdi                       |
-| Asignar un trabajador | Se asigna un trabajador al puesto              |
+| Asignar un trabajador | Se asigna un trabajador                        |
 | Método Investigar     | Nos muestra el resultado del método investigar |
 | Método enseñar        | Nos muestra el resultado del método enseñar    |
 | [Volver](#modulo-pdi) | Nos envia al modulo pdi                        |
@@ -91,5 +91,6 @@ Podemos:
 | Opciones              | Descripción                                    |
 | --------------------- | ---------------------------------------------- |
 | Mostrar Datos         | Nos muestra la lista pas                       |
+| Asignar un trabajador | Se asigna un trabajador                        |
 | Método Administrar    | Nos muestra el resultado del método investigar |
 | [Volver](#modulo-pas) | Nos envia al modulo pas                        |

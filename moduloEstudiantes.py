@@ -34,7 +34,7 @@ def main():
         listaEstudiantes.agregar(nuevoEstudiante)
         print("-----------------------------------------------------")
         print("ESTUDIANTE  CREADA")
- 
+
 
 # menu seleccion de accion 
     while True:
@@ -49,7 +49,7 @@ def main():
             else:
                 print("NO EXISTE LA ESTUDIANTE")
         elif opcion == "3":
-             nuevoEstudiante()
+            nuevoEstudiante()
         elif opcion == "4":
             print("Volver")
             break
