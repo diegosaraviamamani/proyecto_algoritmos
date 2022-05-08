@@ -26,13 +26,15 @@ class Lista:
             self.nodoFinal.siguienteNodo = nuevoNodo
         self.nodoFinal = nuevoNodo
         self.tamanio += 1
-    # def obtenerEn(self, posicion):
-    #     if posicion < 0 or posicion >= self.tamanio:
-    #         return None
-    #     nodoActual = self.nodoInicial
-    #     for i in range(posicion):
-    #         nodoActual = nodoActual.siguienteNodo
-    #     return nodoActual.valor
+
+    def obtenerEn(self, indice):
+        if indice < 0 or indice >= self.tamanio:
+            return None
+        nodoActual = self.nodoInicial
+        for i in range(indice):
+            nodoActual = nodoActual.siguienteNodo
+        return nodoActual.valor
+
     def eliminarEn(self, posicion):
         if posicion < 0 or posicion >= self.tamanio:
             return None
@@ -56,7 +58,13 @@ class Lista:
     def __str__(self):
         cadena = ""
         nodoActual = self.nodoInicial
+        i = 0
         while nodoActual != None:
+            cadena += '-------------------------------\n'
+            cadena += '[{0}]\n'.format(i)
             cadena += str(nodoActual.valor) + "\n"
             nodoActual = nodoActual.siguienteNodo
+            i += 1
+        if i ==  0:
+            cadena += 'No hay elementos en la lista'
         return cadena

@@ -5,7 +5,7 @@
 | Opciones                               | Descripción                       |
 | -------------------------------------- | --------------------------------- |
 | [Universidades](#modulo-universidades) | Nos envia al Módulo Universidades |
-| [Estudiantes](#modulo-estudiantes)      | Nos envia al Módulo Estudiantes   |
+| [Estudiantes](#modulo-estudiantes)     | Nos envia al Módulo Estudiantes   |
 | [Trabajadores](#modulo-trabajadores)   | Nos envia al Módulo Trabajadores  |
 | Salir                                  | Salir del sistema                 |
 
@@ -20,16 +20,16 @@
 
 ### Menu Universidad {#universidad}
 
-| Opciones             | Descripción                                                              |
-| -------------------- | ------------------------------------------------------------------------ |
-| Mostrar Datos        | Nos muestra la lista de universidades con su respectiva posición (index) |
-| Listar estudiantes   | Muestra la lista de estudiantes registrados                              |
-| Agregar estudiantes  | Nos pide información para crear nuevo estudiante                         |
-| Listar Trabajadores  | Muestra la lista de trabajadores registrados                             |
-| Nuevo Trabajador     | Nos pide información para crear nuevo trabajador                         |
-| Listar Departamentos | Muestra la lista de departamentos registrados                            |
-| Nuevo Departamentos  | Nos pide información para crear nuevo departamento                       |
-| [Volver](#principal) | Nos envia al menu principal                                              |
+| Opciones             | Descripción                                        |
+| -------------------- | -------------------------------------------------- |
+| Mostrar Datos        | Nos mmuestra los datos de la univesidad            |
+| Listar estudiantes   | Muestra la lista de estudiantes registrados        |
+| Agregar estudiante   | Nos pide información para crear nuevo estudiante   |
+| Listar Trabajadores  | Muestra la lista de trabajadores registrados       |
+| Agregar Trabajador   | Nos pide información para crear nuevo trabajador   |
+| Listar Departamentos | Muestra la lista de departamentos registrados      |
+| Agregar Departamento | Nos pide información para crear nuevo departamento |
+| [Volver](#principal) | Nos envia al menu principal                        |
 
 ## Menu Módulo Estudiantes {#modulo-estudiantes}
 
