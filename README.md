@@ -72,6 +72,7 @@ Podemos:
 | Opciones              | Descripción                                    |
 | --------------------- | ---------------------------------------------- |
 | Mostrar Datos         | Nos muestra la lista pdi                       |
+| Asignar un trabajador | Se asigna un trabajador al puesto              |
 | Método Investigar     | Nos muestra el resultado del método investigar |
 | Método enseñar        | Nos muestra el resultado del método enseñar    |
 | [Volver](#modulo-pdi) | Nos envia al modulo pdi                        |

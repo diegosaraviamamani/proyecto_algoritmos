@@ -1,27 +1,40 @@
 import os
 
+def main(pdi):
+    def menu():
+        txt = """
+        {0}
+        1. Mostrar Datos
+        2. Asisgnar un trabajador
+        3. Metodo Investigar
+        4. Metodo Enseñar
+        5. Volver
+        """.format(pdi.categoria.upper())
+        print(txt)
+        return input("Ingrese una opción: ")
 
-def menu():
-    print("""
-    MODULO ESTUDIANTES
-    1. Listar Estudiantes
-    2. Seleccionar un estudiante
-    3. Crear nuevo estudiante
-    4. Volver
-    """)
-    return input("Ingrese una opción: ")
+#funciones
+    def mostrarDatos():
+        print(pdi)
 
-def main():
+    def asignarTrabajador():
+        nombre=input('Ingrese el nombre del trabajador: ')
+        ci=input('Ingrese el CI del trabajador: ')
+        fechadeinicio=input('Ingrese fecha de inicio de trabajador : ')
+        pdi.asignarTrabajador(nombre,ci,fechadeinicio)
+#menu de seleccion
     while True:
         opcion = menu()
         os.system('cls') | os.system('clear')
         if opcion == "1":
-            pass
+            mostrarDatos()
         elif opcion == "2":
-            pass
+            asignarTrabajador()
         elif opcion == "3":
-            pass
+            pdi.investigar()
         elif opcion == "4":
+            pdi.enseniar()
+        elif opcion == "5":
             print("Volver")
             break
         else:

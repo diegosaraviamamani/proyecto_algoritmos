@@ -4,9 +4,6 @@ from Universidad import Universidad
 from moduloUniversidad import main as moduloUniversidad
 
 listaUniversidades =Lista()
-univ = Universidad("Universidad Adventista de Bolivia", "Cochabamba")
-listaUniversidades.agregar(univ)
-
 
 # Principal
 def main():

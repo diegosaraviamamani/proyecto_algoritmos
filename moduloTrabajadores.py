@@ -1,8 +1,8 @@
 # Si posee link creamos otro módulo
 # Si no, solo internamente
 import os
-from moduloPersonalDocenteInvestigador import main as moduloPersonalDocenteInvestigador
-from moduloPersonalAdministrativoServicios import main as moduloPersonalAdministrativoServicios
+from moduloPDI import main as moduloPDI
+from moduloPAS import main as moduloPAS
 
 
 def menu():
@@ -19,9 +19,9 @@ def main():
         opcion = menu()
         os.system('cls') | os.system('clear')
         if opcion == "1":
-            moduloPersonalDocenteInvestigador()
+            moduloPDI()
         elif opcion == "2":
-            moduloPersonalAdministrativoServicios()
+            moduloPAS()
         elif opcion == "3":
             print("Volver")
             break
