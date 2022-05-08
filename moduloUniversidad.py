@@ -2,6 +2,7 @@ import imp
 import os
 from Estudiante import Estudiante
 from Trabajador import Trabajador
+from moduloEstudiantes import listaEstudiantes
 
 # Principal
 def main(universidad):
@@ -31,6 +32,7 @@ def main(universidad):
         nombre = input("Ingrese el nombre completo del estudiante: ")
         ci = input("Ingrese el ci del estudiante: ")
         estudiante = Estudiante(nombre, ci, universidad)
+        listaEstudiantes.agregar(estudiante)
         universidad.agregarEstudiante(estudiante)
         print("-----------------------------------------------------")
         print("ESTUDIANTE CREADO")
