@@ -49,12 +49,7 @@ class Lista:
         anteriorNodo.siguienteNodo = anteriorNodo.siguienteNodo.siguienteNodo
         self.tamanio -= 1
         return valor
-    # def iterar(self, funcion):
-    #     nodoActual = self.nodoInicial
-    #     while nodoActual != None:
-    #         funcion(nodoActual)
-    #         nodoActual = nodoActual.siguienteNodo
-    #metodo __str__
+
     def __str__(self):
         cadena = ""
         nodoActual = self.nodoInicial

@@ -11,11 +11,11 @@ def main(universidad):
         {0}
         1. Mostrar datos
         2. Listar estudiantes
-        3. Agregar estudiantes
+        3. Agregar estudiante
         4. Listar trabajadores
-        5. Agregar trabajadores
+        5. Agregar trabajador
         6. Listar departamentos
-        7. Agregar departamentos
+        7. Agregar departamento
         8. Volver
         """.format(universidad.nombre.upper())
         print(txt)
